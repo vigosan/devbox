@@ -1,0 +1,23 @@
+{
+  "name": "mysql-server",
+  "description": "MySQL DB server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "mysql" : {
+      "server_root_password" : "",
+      "server_debian_password" : "",
+      "server_repl_password" : ""
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[mysql::server]",
+    "recipe[monit::mysql]"
+    ],
+  "env_run_lists": {
+
+  }
+}
