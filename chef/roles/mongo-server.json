@@ -1,0 +1,30 @@
+{
+  "name": "mongo-server",
+  "description": "Mongo DB server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "mongodb" : {
+      "package_version" : "2.6.6",
+      "dbconfig_file": "/etc/mongod.conf",
+      "default_init_name": "mongod",
+      "instance_name" : "mongod",
+      "sysconfig_file" : "/etc/default/mongod",
+      "config" : {
+        "logpath" : "/var/log/mongo/mongod.log",
+        "dbpath" : "/var/lib/mongo"
+      }
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[mongodb::10gen_repo]",
+    "recipe[mongodb::default]",
+    "recipe[monit::mongo]"
+    ],
+  "env_run_lists": {
+
+  }
+}

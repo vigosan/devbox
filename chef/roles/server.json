@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "authorization": {
+      "sudo": {
+        "groups": ["admin", "sudo", "sysadmin"],
+        "users": ["deploy"],
+        "passwordless": true
+      }
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[apt::default]",
+    "recipe[build-essential::default]",
+    "recipe[chef-solo-search::default]",
+    "recipe[sudo::default]",
+    "recipe[users::sysadmins]",
+    "recipe[monit::system]",
+    "recipe[ntp::default]"
+  ],
+  "env_run_lists": {
+
+  }
+}

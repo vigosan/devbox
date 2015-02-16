@@ -1,0 +1,25 @@
+{
+  "name": "nginx-server",
+  "description": "Nginx server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "firewall": {
+      "rules": [
+        { "allow http on port 80": { "port": 80 } }
+      ]
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[ufw::default]",
+    "recipe[nginx::repo]",
+    "recipe[nginx::default]",
+    "recipe[monit::nginx]"
+  ],
+  "env_run_lists": {
+
+  }
+}

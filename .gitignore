@@ -1,0 +1,9 @@
+.vagrant
+**.swp
+**.swo
+**.log
+**.rbc
+**.orig
+**/tmp/*
+**.DS_Store
+/chef/cookbooks

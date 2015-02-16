@@ -1,0 +1,90 @@
+DEPENDENCIES
+  apt
+  build-essential
+    git: git://github.com/opscode-cookbooks/build-essential.git
+    revision: 33802c7567812c31285dff1f3fe89456b5108912
+  chef-solo-search
+    git: git://github.com/edelight/chef-solo-search.git
+    revision: 72bd5e3507056e5c931ee0cf7516ce1bfbce6d51
+  memcached
+    git: git://github.com/opscode-cookbooks/memcached.git
+    revision: 8ba85664be26833441732e149453142ce5769dfe
+  mongodb
+    git: git://github.com/edelight/chef-mongodb.git
+    revision: dc5836318a27331f605f264d946931927dd26bb8
+  monit
+    git: git://github.com/vigosan/monit.git
+    revision: acab319b69d43bab7fa112b14fc0f85a5ca42da2
+  nginx
+    git: git://github.com/miketheman/nginx.git
+    revision: b5b74dff8d1d8fdeea70cede9050f5fd601e6fad
+  ntp
+    git: git://github.com/gmiranda23/ntp.git
+    revision: 483c551bda8f9bfe6719c4e45f7176c8b3515f25
+  rails-gem-dependencies
+    git: git://github.com/vigosan/rails-gem-dependencies.git
+    revision: 7cd513d0de1980cd72bb95a476ce94edcca98c06
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  redis-server
+    git: git://github.com/vigosan/redis-server.git
+    revision: 623c221bdf030a68d424d84cefecd9fa41b633c2
+  sudo
+    git: git://github.com/opscode-cookbooks/sudo.git
+    revision: cbd703cac77b7900674131441a22323f7d88d1c7
+  ufw
+    git: git://github.com/opscode-cookbooks/ufw.git
+    revision: 895fba816ca54456c9c66d008ebbce744f7dec59
+  users
+    git: git://github.com/opscode-cookbooks/users.git
+    revision: fca9a42ab44dadbb98432c931dfc6c049ecc23ce
+
+GRAPH
+  apt (2.6.1)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  build-essential (2.1.3)
+  chef-solo-search (0.5.2)
+  firewall (0.11.8)
+  java (1.29.0)
+  memcached (1.7.3)
+    runit (~> 1.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  mongodb (0.16.3)
+    apt (>= 1.8.2)
+    python (>= 0.0.0)
+    yum (>= 3.0.0)
+  monit (0.1.0)
+  nginx (2.7.4)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  ntp (1.7.0)
+  ohai (2.0.1)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  rails-gem-dependencies (0.1.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  redis-server (0.1.0)
+    apt (>= 0.0.0)
+  rsyslog (1.13.0)
+  ruby_build (0.8.0)
+  runit (1.5.12)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  sudo (2.7.1)
+  ufw (0.7.5)
+    firewall (>= 0.9.0)
+  users (1.7.1)
+  yum (3.5.2)
+  yum-epel (0.5.3)
+    yum (~> 3.0)
