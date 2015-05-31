@@ -17,6 +17,7 @@
   "chef_type": "role",
   "run_list": [
     "recipe[apt::default]",
+    "recipe[git::default]",
     "recipe[build-essential::default]",
     "recipe[chef-solo-search::default]",
     "recipe[sudo::default]",

@@ -28,5 +28,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_role "rails-app"
     chef.add_role "mongo-server"
     chef.add_role "mysql-server"
+    chef.add_role "node-js"
   end
 end
