@@ -13,7 +13,7 @@
   "chef_type": "role",
   "run_list": [
     "recipe[nodejs::default]",
-    "recipe[node-js-dependencies::default]"
+    "recipe[nodejs-dependencies::default]"
   ],
   "env_run_lists": {
 

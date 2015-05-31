@@ -10,9 +10,9 @@ DEPENDENCIES
     revision: 495dfa253c6dd2109e29958f9a2fe10e85a4928d
   mysql (~> 5.6.1)
   nginx (~> 2.7.4)
-  node-js-dependencies
-    git: git://github.com/vigosan/node-js-dependencies.git
-    revision: 0c5b354c4891feecee88659f10922a9b19869305
+  nodejs-dependencies
+    git: git://github.com/vigosan/nodejs-dependencies.git
+    revision: 48cf0dad68eb834a15a62ea140965812bab51017
   ntp (~> 1.7.0)
   rails-gem-dependencies
     git: git://github.com/vigosan/rails-gem-dependencies.git
@@ -68,14 +68,14 @@ GRAPH
     ohai (~> 2.0)
     runit (~> 1.2)
     yum-epel (~> 0.3)
-  node-js-dependencies (0.1.0)
-    nodejs (~> 2.4.0)
   nodejs (2.4.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     build-essential (>= 0.0.0)
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
+  nodejs-dependencies (0.1.0)
+    nodejs (~> 2.4.0)
   ntp (1.7.0)
   ohai (2.0.1)
   python (1.4.6)
