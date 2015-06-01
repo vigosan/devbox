@@ -26,6 +26,7 @@ DEPENDENCIES
   sudo (~> 2.7.1)
   ufw (~> 0.7.4)
   users (~> 1.7.0)
+  vim (~> 1.1.2)
 
 GRAPH
   7-zip (1.0.2)
@@ -99,6 +100,7 @@ GRAPH
   ufw (0.7.4)
     firewall (>= 0.9.0)
   users (1.7.0)
+  vim (1.1.2)
   windows (1.37.0)
     chef_handler (>= 0.0.0)
   yum (3.5.2)
