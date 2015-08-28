@@ -4,10 +4,10 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "rbenv": {
-      "rubies": ["2.1.6"],
-      "global": "2.1.6",
+      "rubies": ["2.2.2"],
+      "global": "2.2.2",
       "gems": {
-        "2.1.6": [ { "name": "bundler" } ]
+        "2.2.2": [ { "name": "bundler" } ]
       }
     }
   },
@@ -16,9 +16,9 @@
   },
   "chef_type": "role",
   "run_list": [
+    "recipe[rails-gem-dependencies]",
     "recipe[ruby_build]",
-    "recipe[rbenv::system]",
-    "recipe[rails-gem-dependencies]"
+    "recipe[rbenv::system]"
   ],
   "env_run_lists": {
 
