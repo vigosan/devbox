@@ -10,8 +10,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[memcached::default]",
-    "recipe[monit::memcached]"
+    "recipe[memcached::default]"
   ],
   "env_run_lists": {
 

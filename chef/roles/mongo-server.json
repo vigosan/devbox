@@ -21,8 +21,7 @@
   "chef_type": "role",
   "run_list": [
     "recipe[mongodb::10gen_repo]",
-    "recipe[mongodb::default]",
-    "recipe[monit::mongo]"
+    "recipe[mongodb::default]"
     ],
   "env_run_lists": {
 

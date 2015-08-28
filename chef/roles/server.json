@@ -23,7 +23,6 @@
     "recipe[chef-solo-search::default]",
     "recipe[sudo::default]",
     "recipe[users::sysadmins]",
-    "recipe[monit::system]",
     "recipe[ntp::default]"
   ],
   "env_run_lists": {
