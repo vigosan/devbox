@@ -4,8 +4,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "wheezy64"
-  config.vm.box_url = "https://dl.dropboxusercontent.com/u/5496222/Vagrant/wheezy64.box"
+  config.vm.box = "lucid64"
+  config.vm.box_url = "http://files.vagrantup.com/lucid64.box"
 
   config.vm.host_name = "dev"
   config.vm.network :forwarded_port, guest: 3000, host: 3000
