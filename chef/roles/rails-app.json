@@ -4,10 +4,10 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "rbenv": {
-      "rubies": ["2.2.2"],
-      "global": "2.2.2",
+      "rubies": ["2.2.3"],
+      "global": "2.2.3",
       "gems": {
-        "2.2.2": [ { "name": "bundler" } ]
+        "2.2.3": [ { "name": "bundler" } ]
       }
     }
   },

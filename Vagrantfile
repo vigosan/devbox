@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 VAGRANTFILE_API_VERSION = "2"
+VM_MEMORY_SIZE = ENV['PT_VM_MEMORY'] || 2048
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "lucid64"
@@ -21,6 +22,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vbguest.auto_update = true
   config.berkshelf.enabled = true
   config.berkshelf.berksfile_path = "chef/Berksfile"
+
+  config.vm.provider :virtualbox do |vb|
+    vb.customize ['modifyvm', :id, '--memory', VM_MEMORY_SIZE.to_i]
+  end
 
   config.vm.provision :chef_solo do |chef|
     chef.roles_path = "chef/roles"
