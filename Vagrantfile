@@ -9,10 +9,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "https://atlas.hashicorp.com/ubuntu/trusty64"
 
   config.vm.host_name = "dev"
-  #config.vm.network :forwarded_port, guest: 3000, host: 3000
-  #config.vm.network :forwarded_port, guest: 3333, host: 3333
-  #config.vm.network :forwarded_port, guest: 4200, host: 4200
-  #config.vm.network :forwarded_port, guest: 9292, host: 9292
+  config.vm.network :forwarded_port, guest: 3000, host: 3000
+  config.vm.network :forwarded_port, guest: 3333, host: 3333
+  config.vm.network :forwarded_port, guest: 4200, host: 4200
+  config.vm.network :forwarded_port, guest: 9292, host: 9292
+  config.vm.network :forwarded_port, guest: 49152, host: 49152
   config.vm.network :private_network, ip: "192.168.33.10"
 
   config.ssh.forward_agent = true
