@@ -9,11 +9,11 @@ DEPENDENCIES
   nginx (~> 2.7.4)
   nodejs-dependencies
     git: git://github.com/vigosan/nodejs-dependencies.git
-    revision: 48cf0dad68eb834a15a62ea140965812bab51017
+    revision: 2b5a2cc547da49596423e0d9de0c66b282a05a1f
   ntp (~> 1.7.0)
   rails-gem-dependencies
     git: git://github.com/vigosan/rails-gem-dependencies.git
-    revision: 107903614dc34d0db7986457f7123ce23861270e
+    revision: 53e9ccc8344776d1f551c30953e6022163feb578
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
     revision: 010e4cfaeabc0d95270b854c8d2f2021b7291fed

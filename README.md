@@ -26,19 +26,22 @@ vagrant@dev:~$
 
 ## Roles
 
-- server: Install common server packages
-- rails-app: Install Rbenv and Rails ecosystem
 - memcached-server: Install Memcached server
 - mongo-server: Installs Mongo DB server
+- mysql-server: Installs MySQL server
 - nginx-server: Installs Nginx server
+- node-js: Install Rbenv and Rails ecosystem
+- rails-app: Install Rbenv and Rails ecosystem
 - redis-cache-server: Installs Redis cache server
+- server: Install common server packages
 
 ## What's In The Box
 
 * Git
-* Ruby 2.2.0 via rbenv
+* Ruby 2.2.3 via rbenv
 * Bundler
 * SQLite3, MySQL, and Postgres
 * Memcached
 * Redis
 * PhantomJS
+* Node.js
