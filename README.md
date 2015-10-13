@@ -12,15 +12,12 @@ This project automates the setup of a development environment for Ruby on Rails,
 ## How To Build The Virtual Machine
 
 ```zsh
-$ git clone git@github.com:vigosan/rails-dev-box.git
+$ git clone git@github.com:vigosan/devbox.git
 $ cd devbox
 $ vagrant plugin install vagrant-berkshelf
 $ vagrant plugin install vagrant-vbguest
-$ vagrant up
-$ vagrant provision
+$ vagrant up --provision
 $ vagrant ssh
-Linux dev 3.2.0-4-amd64 #1 SMP Debian 3.2.46-1 x86_64
-...
 vagrant@dev:~$
 ```
 
@@ -45,3 +42,4 @@ vagrant@dev:~$
 * Redis
 * PhantomJS
 * Node.js
+* grunt-cli, ember-cli, express, watchman...
