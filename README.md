@@ -8,6 +8,7 @@ This project automates the setup of a development environment for Ruby on Rails,
 
 * [VirtualBox](https://www.virtualbox.org)
 * [Vagrant](http://vagrantup.com)
+* [Chef Development Kit](https://downloads.chef.io/chef-dk)
 
 ## How To Build The Virtual Machine
 
