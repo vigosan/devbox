@@ -29,6 +29,7 @@ vagrant@dev:~$
 - mysql-server: Installs MySQL server
 - nginx-server: Installs Nginx server
 - node-js: Install Rbenv and Rails ecosystem
+- postgre-server: Installs PostgreSQL server
 - rails-app: Install Rbenv and Rails ecosystem
 - redis-cache-server: Installs Redis cache server
 - server: Install common server packages

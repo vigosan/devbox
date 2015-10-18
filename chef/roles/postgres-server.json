@@ -1,0 +1,23 @@
+// password `secret`
+{
+  "name": "postgres-server",
+  "description": "PostgreSQL DB server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "postgresql" : {
+      "password" : {
+        "postgres": "md553f48b7c4b76a86ce72276c5755f217d"
+      }
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[postgresql::server]"
+  ],
+  "env_run_lists": {
+
+  }
+}
