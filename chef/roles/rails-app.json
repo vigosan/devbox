@@ -17,8 +17,8 @@
   "chef_type": "role",
   "run_list": [
     "recipe[rails-gem-dependencies]",
-    "recipe[ruby_build]",
-    "recipe[rbenv::system]"
+    "recipe[ruby_build::default]",
+    "recipe[ruby_rbenv::system]"
   ],
   "env_run_lists": {
 
