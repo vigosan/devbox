@@ -5,8 +5,7 @@ VAGRANTFILE_API_VERSION = "2"
 VM_MEMORY_SIZE = ENV['PT_VM_MEMORY'] || 2048
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "ubuntu/precise64"
-  config.vm.box_url = "https://dl.dropboxusercontent.com/u/5496222/Vagrant/precise64.box"
+  config.vm.box = "ubuntu/trusty64"
 
   config.vm.host_name = "dev"
   config.vm.network :forwarded_port, guest: 3000, host: 3000
