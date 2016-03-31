@@ -4,8 +4,7 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "nodejs" : {
-      "install_method" : "package",
-      "version": "0.12"
+      "engine": "iojs"
     }
   },
   "override_attributes": {

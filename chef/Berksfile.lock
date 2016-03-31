@@ -47,6 +47,8 @@ GRAPH
     yum-epel (>= 0.0.0)
   homebrew (1.13.0)
     build-essential (>= 2.1.2)
+  java (1.39.0)
+    apt (>= 0.0.0)
   memcached (1.7.2)
     runit (~> 1.0)
     yum (~> 3.0)
